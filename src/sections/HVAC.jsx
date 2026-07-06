@@ -52,7 +52,7 @@ export default function HVAC({ id }) {
   ];
 
   return (
-    <section id={id} className="py-24 sm:py-32 bg-neutral-50 overflow-hidden relative pattern-segmented-bend">
+    <section id={id} className="py-24 sm:py-32 bg-neutral-50 overflow-hidden relative industrial-grid-dark">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 

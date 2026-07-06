@@ -42,7 +42,7 @@ export default function Hero({ id }) {
   return (
     <section
       id={id}
-      className="relative min-h-screen flex items-center bg-white overflow-hidden pt-24 lg:pt-0 pattern-cad-grid"
+      className="relative min-h-screen flex items-center bg-white overflow-hidden pt-24 lg:pt-0 industrial-grid"
     >
       {/* Subtle gold glow accents */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-gold/[0.04] rounded-full blur-[120px]" />
