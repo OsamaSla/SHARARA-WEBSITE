@@ -52,13 +52,7 @@ export default function SheetMetal({ id }) {
   ];
 
   return (
-    <section id={id} className="py-24 sm:py-32 bg-white relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{
-        backgroundImage: `linear-gradient(45deg, #C69214 1px, transparent 1px),
-                          linear-gradient(-45deg, #C69214 1px, transparent 1px)`,
-        backgroundSize: '40px 40px',
-      }} />
+    <section id={id} className="py-24 sm:py-32 bg-white relative overflow-hidden pattern-metal-folds">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 

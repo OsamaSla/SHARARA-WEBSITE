@@ -42,18 +42,8 @@ export default function Hero({ id }) {
   return (
     <section
       id={id}
-      className="relative min-h-screen flex items-center bg-white overflow-hidden pt-24 lg:pt-0"
+      className="relative min-h-screen flex items-center bg-white overflow-hidden pt-24 lg:pt-0 pattern-cad-grid"
     >
-      {/* Blueprint dot grid — light industrial feel */}
-      <div
-        className="absolute inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, #334155 0.8px, transparent 0.8px)",
-          backgroundSize: "24px 24px",
-        }}
-      />
-
       {/* Subtle gold glow accents */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-gold/[0.04] rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/3 w-[350px] h-[350px] bg-brand-gold/[0.03] rounded-full blur-[100px]" />

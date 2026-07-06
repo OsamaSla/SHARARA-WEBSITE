@@ -52,12 +52,7 @@ export default function Products({ id }) {
   ];
 
   return (
-    <section id={id} className="py-24 sm:py-32 bg-neutral-50 relative overflow-hidden">
-      {/* Blueprint grid pattern */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{
-        backgroundImage: `radial-gradient(circle, #334155 0.6px, transparent 0.6px)`,
-        backgroundSize: '20px 20px',
-      }} />
+    <section id={id} className="py-24 sm:py-32 bg-neutral-50 relative overflow-hidden pattern-blueprint-marks">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 

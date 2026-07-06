@@ -52,12 +52,7 @@ export default function Profile({ id }) {
   ];
 
   return (
-    <section id={id} className="py-24 sm:py-32 bg-gray-50 relative overflow-hidden">
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{
-        backgroundImage: `radial-gradient(circle, #C69214 1px, transparent 1px)`,
-        backgroundSize: '40px 40px',
-      }} />
+    <section id={id} className="py-24 sm:py-32 bg-gray-50 relative overflow-hidden pattern-rivets">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
