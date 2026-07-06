@@ -180,17 +180,43 @@ body {
 .industrial-grid {
   background-color: #ffffff;
   background-image:
+    /* Gold engineering grid lines */
     linear-gradient(to right, rgba(198, 146, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(198, 146, 20, 0.04) 1px, transparent 1px),
+    /* Duct fitting silhouettes — round duct cross-sections */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Ccircle cx='80' cy='80' r='35' fill='none' stroke='%23C69214' stroke-width='0.6' opacity='0.045'/%3E%3Ccircle cx='80' cy='80' r='28' fill='none' stroke='%23C69214' stroke-width='0.4' opacity='0.03'/%3E%3Ccircle cx='80' cy='80' r='20' fill='none' stroke='%23C69214' stroke-width='0.3' opacity='0.02'/%3E%3Ccircle cx='320' cy='280' r='45' fill='none' stroke='%23334155' stroke-width='0.5' opacity='0.035'/%3E%3Ccircle cx='320' cy='280' r='36' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Ccircle cx='320' cy='280' r='26' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.018'/%3E%3C/svg%3E"),
+    /* Rectangular duct with flanges */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Crect x='50' y='350' width='120' height='60' rx='2' fill='none' stroke='%23334155' stroke-width='0.5' opacity='0.03'/%3E%3Cline x1='45' y1='350' x2='45' y2='410' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Cline x1='175' y1='350' x2='175' y2='410' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Crect x='350' y='80' width='90' height='45' rx='2' fill='none' stroke='%23C69214' stroke-width='0.4' opacity='0.03'/%3E%3Cline x1='345' y1='80' x2='345' y2='125' stroke='%23C69214' stroke-width='0.3' opacity='0.025'/%3E%3Cline x1='445' y1='80' x2='445' y2='125' stroke='%23C69214' stroke-width='0.3' opacity='0.025'/%3E%3C/svg%3E"),
+    /* Elbow / bend fitting */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cpath d='M100 500 Q100 350 250 350' fill='none' stroke='%23334155' stroke-width='0.6' opacity='0.025'/%3E%3Cpath d='M100 480 Q100 340 240 340' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.018'/%3E%3Cpath d='M450 150 Q450 280 320 280' fill='none' stroke='%23C69214' stroke-width='0.5' opacity='0.025'/%3E%3Cpath d='M450 170 Q450 290 330 290' fill='none' stroke='%23C69214' stroke-width='0.35' opacity='0.018'/%3E%3C/svg%3E"),
+    /* Reducer / transition piece */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Cpath d='M600 600 L640 580 L640 620 Z' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Cpath d='M600 610 L650 590 L650 630 Z' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.018'/%3E%3Cpath d='M150 100 L120 80 L120 120 Z' fill='none' stroke='%23C69214' stroke-width='0.4' opacity='0.025'/%3E%3Cpath d='M150 110 L110 90 L110 130 Z' fill='none' stroke='%23C69214' stroke-width='0.3' opacity='0.018'/%3E%3C/svg%3E"),
+    /* Damper with blade */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Crect x='700' y='50' width='50' height='50' rx='1' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Cline x1='700' y1='75' x2='750' y2='75' stroke='%23334155' stroke-width='0.3' opacity='0.02'/%3E%3Cline x1='715' y1='50' x2='735' y2='100' stroke='%23C69214' stroke-width='0.3' opacity='0.025'/%3E%3Crect x='50' y='650' width='60' height='40' rx='1' fill='none' stroke='%23C69214' stroke-width='0.4' opacity='0.025'/%3E%3Cline x1='50' y1='670' x2='110' y2='670' stroke='%23C69214' stroke-width='0.3' opacity='0.02'/%3E%3Cline x1='65' y1='650' x2='95' y2='690' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3C/svg%3E"),
+    /* Gold grid lines (base) */
     linear-gradient(to bottom, rgba(198, 146, 20, 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-size: 40px 40px, 40px 40px, 400px 400px, 500px 500px, 600px 600px, 700px 700px, 800px 800px, 40px 40px;
 }
 
 .industrial-grid-dark {
   background-color: #f8fafc;
   background-image:
+    /* Charcoal engineering grid lines */
     linear-gradient(to right, rgba(51, 65, 85, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(51, 65, 85, 0.03) 1px, transparent 1px),
+    /* AHU / air handling unit silhouette */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400'%3E%3Crect x='60' y='60' width='140' height='80' rx='3' fill='none' stroke='%23334155' stroke-width='0.5' opacity='0.04'/%3E%3Crect x='75' y='75' width='30' height='50' rx='1' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.03'/%3E%3Crect x='115' y='75' width='30' height='50' rx='1' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.03'/%3E%3Crect x='155' y='75' width='30' height='50' rx='1' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.03'/%3E%3Cline x1='200' y1='100' x2='260' y2='100' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Ccircle cx='290' cy='100' r='25' fill='none' stroke='%23334155' stroke-width='0.5' opacity='0.035'/%3E%3Ccircle cx='290' cy='100' r='18' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.025'/%3E%3Cpath d='M275 100 L290 85 L305 100 L290 115 Z' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3C/svg%3E"),
+    /* Fan blade / impeller */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='450' height='450'%3E%3Ccircle cx='350' cy='350' r='40' fill='none' stroke='%23334155' stroke-width='0.5' opacity='0.035'/%3E%3Ccircle cx='350' cy='350' r='8' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Cpath d='M350 342 Q360 320 350 310' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.028'/%3E%3Cpath d='M358 350 Q380 340 390 350' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.028'/%3E%3Cpath d='M350 358 Q340 380 350 390' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.028'/%3E%3Cpath d='M342 350 Q320 360 310 350' fill='none' stroke='%23334155' stroke-width='0.35' opacity='0.028'/%3E%3C/svg%3E"),
+    /* Grille / diffuser pattern */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3Cline x1='80' y1='30' x2='80' y2='90' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Cline x1='95' y1='30' x2='95' y2='90' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Cline x1='110' y1='30' x2='110' y2='90' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Cline x1='125' y1='30' x2='125' y2='90' stroke='%23334155' stroke-width='0.4' opacity='0.03'/%3E%3Crect x='72' y='25' width='60' height='70' rx='2' fill='none' stroke='%23334155' stroke-width='0.45' opacity='0.035'/%3E%3C/svg%3E"),
+    /* Flex connector / wavy joint */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cpath d='M500 500 Q510 490 520 500 Q530 510 540 500 Q550 490 560 500' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Cpath d='M500 510 Q510 500 520 510 Q530 520 540 510 Q550 500 560 510' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.018'/%3E%3Cpath d='M100 150 Q110 140 120 150 Q130 160 140 150 Q150 140 160 150' fill='none' stroke='%23334155' stroke-width='0.4' opacity='0.025'/%3E%3Cpath d='M100 160 Q110 150 120 160 Q130 170 140 160 Q150 150 160 160' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.018'/%3E%3C/svg%3E"),
+    /* VAV box */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Crect x='550' y='550' width='80' height='40' rx='2' fill='none' stroke='%23334155' stroke-width='0.45' opacity='0.03'/%3E%3Cline x1='560' y1='560' x2='560' y2='580' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3Cline x1='580' y1='560' x2='580' y2='580' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3Cline x1='600' y1='560' x2='600' y2='580' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3Ccircle cx='620' cy='570' r='5' fill='none' stroke='%23334155' stroke-width='0.3' opacity='0.025'/%3E%3C/svg%3E"),
+    /* Charcoal grid lines (base) */
     linear-gradient(to bottom, rgba(51, 65, 85, 0.03) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background-size: 30px 30px, 30px 30px, 500px 400px, 450px 450px, 350px 350px, 600px 600px, 700px 700px, 30px 30px;
 }
 
 /* ========================================
